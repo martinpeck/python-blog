@@ -11,8 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div>Microblog: <a href="/index">Home</a></div>
+  <div>Microblog:
+    <a href="/index">Home</a>
+    <a href="/login">Login</a>
   <hr>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
 {% block content %}{% endblock %}
 </body>
 </html>
