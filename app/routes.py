@@ -7,7 +7,6 @@ from app.models import User
 
 @app.route('/')
 @app.route('/index')
-@login_required
 def index():
   user = {'username': 'Martin'}
   posts = [
