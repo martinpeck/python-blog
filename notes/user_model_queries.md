@@ -51,8 +51,6 @@ True
 
 ```python
 >>> users = User.query.filter_by(email='martin@example.com')
->>> users
-<flask_sqlalchemy.BaseQuery object at 0x10fcfce80>
 >>> users[0]
 <User Martin>
 >>> users.count()
