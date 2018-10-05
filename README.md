@@ -22,11 +22,12 @@ This is a blog, written in Python, that uses the Flask web framework.
 
     > Note: this will create an app.db file on your local machine, and use sqlite as a database engine.
 
-5. [optional] Create a .env file and specify how you want flask to be run. For example, to run the local server in development mode:
+5. [optional] Create a `.env` file and specify how you want flask to be run. For example, to run the local server in development mode:
 
     ``` env
     FLASK_ENV=development
     SECRET=some-secret-value-that-you-should-never-commit-to-git
+    ROLLBAR_ACCESS_TOKEN=your-rollbar-access-token-goes-here
     ```
     Other Flask environment variables can be found here:
 
